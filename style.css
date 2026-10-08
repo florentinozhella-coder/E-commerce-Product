@@ -1,0 +1,163 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:lavenderblush;
+    padding:20px;
+}
+
+nav{
+    background:hotpink;
+    padding:20px;
+    text-align:center;
+    border-radius:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 15px pink;
+}
+
+nav h2{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:mistyrose;
+    transform:translateY(-3px);
+    display:inline-block;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    color:deeppink;
+    margin-bottom:15px;
+}
+
+header p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+section:first-of-type{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+figure{
+    width:250px;
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px pink;
+    transition:.3s;
+}
+
+figure:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px hotpink;
+}
+
+figure img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+figcaption h3{
+    color:deeppink;
+    margin:15px 0 10px;
+}
+
+.price{
+    color:hotpink;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+button{
+    background:hotpink;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:deeppink;
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px pink;
+}
+
+button:active{
+    background:palevioletred;
+    transform:translateY(0);
+}
+
+.about,
+.features,
+.reviews,
+.contact{
+    background:white;
+    max-width:1000px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px pink;
+}
+
+.about h2,
+.features h2,
+.reviews h2,
+.contact h2{
+    color:deeppink;
+    margin-bottom:15px;
+}
+
+footer{
+    background:linear-gradient(to right,hotpink,deeppink);
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:20px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    figure{
+        width:100%;
+        max-width:320px;
+    }
+}s
